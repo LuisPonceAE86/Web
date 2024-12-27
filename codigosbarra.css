@@ -1,0 +1,234 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading Styles */
+h1, h2 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Actions container */
+.acciones {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Button Styles */
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Edit Button */
+.editar-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.editar-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Delete Button */
+.eliminar-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.eliminar-btn:hover {
+    background-color: #e53935;
+    transform: scale(1.05);
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+}
+
+input[type="text"], input[type="file"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    width: calc(100% - 22px);
+}
+
+input:focus {
+    border-color: #6C63FF;
+    outline: none;
+}
+
+/* Actions Inputs */
+.acciones input[type="text"], .acciones input[type="file"] {
+    flex-grow: 1;
+    margin: 0;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+}
+
+.acciones button {
+    padding: 8px 15px;
+    margin: 0 5px;
+}
+
+.acciones a {
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: none;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #6C63FF;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+a {
+    color: #6C63FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Image Styles */
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 24px; /* Reduce title size */
+    }
+
+    .acciones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .acciones button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    form {
+        padding: 15px;
+        width: 90%;
+    }
+
+    input[type="text"], input[type="file"] {
+        padding: 8px;
+        margin: 8px 0;
+    }
+
+    .btn-login {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    table {
+        margin-top: 15px;
+    }
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 20px; /* Further reduce title size */
+    }
+
+    .acciones button {
+        padding: 6px 12px;
+    }
+
+    form {
+        padding: 10px;
+        width: 95%;
+    }
+
+    .acciones {
+        gap: 5px;
+    }
+
+    table {
+        margin-top: 10px;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}

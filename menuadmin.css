@@ -1,0 +1,123 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4e73df, #1c3d87);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#menu {
+    background-color: #FFFFFF; /* Blanco */
+    padding: 40px;
+    border-radius: 16px; /* Bordes más redondeados */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Sombra más definida */
+    max-width: 420px; /* Ancho ligeramente mayor */
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#menu:hover {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2); /* Efecto al pasar el mouse */
+    transform: scale(1.02); /* Efecto de crecimiento */
+}
+
+h1 {
+    color: #333333; /* Gris Oscuro */
+    font-size: 2.7em; /* Tamaño más grande */
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 15px 0; /* Espaciado entre los botones */
+}
+
+a {
+    display: block; /* Asegúrate de que el enlace ocupe todo el ancho del li */
+    padding: 15px; /* Padding adecuado */
+    text-decoration: none;
+    color: #FFFFFF; /* Blanco */
+    background-color: #0044CC; /* Azul Principal */
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 1.3em; /* Tamaño de fuente más grande */
+    width: 240px; /* Ancho fijo para todos los botones */
+    margin: 0 auto; /* Centramos el botón */
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+a:hover {
+    background-color: #28A745; /* Verde Acento */
+    transform: translateY(-3px) scale(1.05); /* Efecto de elevación */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+a:active {
+    transform: translateY(0);
+}
+
+a i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
+#superadmin {
+    display: none; /* Ocultar por defecto */
+}
+
+.logout {
+    background-color: #DC3545; /* Color rojo para el botón de salir */
+}
+
+.logout:hover {
+    background-color: #C82333; /* Color más oscuro al pasar el ratón */
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Reducir tamaño de texto */
+    }
+
+    #menu {
+        padding: 30px; /* Reducir padding */
+        max-width: 90%; /* Ancho máximo adaptado */
+    }
+
+    a {
+        font-size: 1.1em; /* Reducir tamaño de fuente */
+        width: 200px; /* Reducir el ancho del botón */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Reducir aún más el tamaño del título */
+    }
+
+    #menu {
+        padding: 20px; /* Reducir aún más el padding */
+        max-width: 95%; /* Aumentar el ancho en pantallas muy pequeñas */
+    }
+
+    a {
+        font-size: 1em; /* Ajuste de tamaño de fuente */
+        padding: 10px; /* Reducir padding */
+        width: 180px; /* Hacer botones más pequeños */
+    }
+
+    .logout {
+        font-size: 1.1em; /* Ajustar el tamaño de texto del botón logout */
+    }
+}

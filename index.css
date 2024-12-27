@@ -1,0 +1,312 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #4e73df, #1c3d87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Wrapper for Centering the login box */
+.login-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login Container */
+.login-container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Heading */
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Input Group con Iconos */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+/* Estilo de los inputs con iconos */
+.input-with-icon {
+    position: relative;
+    width: 100%;
+}
+
+.input-with-icon input {
+    width: 100%;
+    padding: 12px 40px 12px 12px; /* Espacio para el ícono */
+    margin-top: 8px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+
+.input-with-icon input:focus {
+    border-color: #4e73df;
+    outline: none;
+}
+
+/* Íconos dentro de los campos */
+.input-with-icon i {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #4e73df;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.input-with-icon input:focus + i {
+    color: #1c3d87; /* Cambio de color del ícono al enfocar */
+}
+
+/* Estilo de los labels */
+label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4e73df;
+    outline: none;
+}
+
+/* Button */
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #1c3d87;
+}
+
+/* Error Message *//* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #4e73df, #1c3d87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Wrapper for Centering the login box */
+.login-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login Container */
+.login-container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Heading */
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Input Group con Iconos */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+/* Estilo de los inputs con iconos */
+.input-with-icon {
+    position: relative;
+    width: 100%;
+}
+
+.input-with-icon input {
+    width: 100%;
+    padding: 12px 40px 12px 12px; /* Espacio para el ícono */
+    margin-top: 8px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+
+.input-with-icon input:focus {
+    border-color: #4e73df;
+    outline: none;
+}
+
+/* Íconos dentro de los campos */
+.input-with-icon i {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #4e73df;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.input-with-icon input:focus + i {
+    color: #1c3d87; /* Cambio de color del ícono al enfocar */
+}
+
+/* Estilo de los labels */
+label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4e73df;
+    outline: none;
+}
+
+/* Button */
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #1c3d87;
+}
+
+/* Error Message */
+.error {
+    color: #f44336;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px; /* Reducir el tamaño del título */
+        margin-bottom: 20px;
+    }
+
+    .login-container {
+        padding: 30px 20px; /* Reducir padding */
+        max-width: 90%; /* Ajustar el ancho a pantallas más pequeñas */
+    }
+
+    .input-with-icon input {
+        font-size: 13px; /* Ajustar el tamaño de la fuente */
+    }
+
+    .btn-login {
+        font-size: 14px; /* Reducir tamaño de fuente en el botón */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px; /* Reducir aún más el tamaño del título */
+        margin-bottom: 15px;
+    }
+
+    .login-container {
+        padding: 20px 15px; /* Reducir más el padding */
+        max-width: 95%; /* Ajuste a pantallas muy pequeñas */
+    }
+
+    .input-with-icon input {
+        font-size: 12px; /* Ajustar aún más el tamaño de la fuente */
+    }
+
+    .btn-login {
+        font-size: 12px; /* Reducir tamaño de fuente en el botón */
+        padding: 10px; /* Ajustar padding del botón */
+    }
+}
+
+.error {
+    color: #f44336;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
